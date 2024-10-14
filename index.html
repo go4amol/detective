@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Detective Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Map Detective Game لعبة كشف الخرائط!</h1>
+        <p>You will be given hints about famous places in Oman. Try to guess the location! سيتم تزويدك بتلميحات حول الأماكن الشهيرة في عُمان. حاول تخمين الموقع!</p>
+        <div id="hint" class="hint"></div>
+        <input type="text" id="guess" placeholder="What's your guess?ما هو تخمينك؟" />
+        <button id="submitGuess">Submit Guess</button>
+        <button id="nextQuestion" style="display: none;">Next Question</button>
+        <div id="map" class="map"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
